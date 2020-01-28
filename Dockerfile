@@ -25,7 +25,7 @@ MAINTAINER Martin Weber Nissle <martin.webernissle@pax.ch>
 
 # Install dependencies and the SAP packages
 RUN cd && \
-    yum -y install initscripts which unzip wget
+    yum -y install initscripts which unzip wget lsof
 
 # Download from SAP tool (you accept the license agreements with this command)
 RUN wget --no-check-certificate --no-cookies --header "Cookie: eula_3_1_agreed=tools.hana.ondemand.com/developer-license-3_1.txt; path=/;" -S https://tools.hana.ondemand.com/additional/sapcc-2.12.2-linux-x64.zip  && \
